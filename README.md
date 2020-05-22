@@ -92,7 +92,7 @@ html skeleton
         * Pseudo Class - Pseudo Element
             Zie MDN
 
-    <img src="./img/pseudoClasses.png" alt="margin collapse" width="400px">
+    <img src="./img/pseudoClasses.png" alt="margin collapse" width="500px">
 
     * Vb:
         * Pseudo class:
@@ -142,7 +142,7 @@ html skeleton
 
 **Summary:**
 
-<img src="./img/properties2remember.png" alt="margin collapse" width="400px">
+<img src="./img/properties2remember.png" alt="margin collapse" width="600px">
 
 * !important -> do NOT use it -> bad coding (all over the place!!)
 	Goal = it overwrites all other 'specificity' -> will lead to more !important :-(
