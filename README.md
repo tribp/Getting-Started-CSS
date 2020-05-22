@@ -70,12 +70,12 @@ html skeleton
 	* " display : ….. "
 		* display: block :
 			* Takes all the available space
-			* You can set  margin-top margin-bottom			* Eg:<div> <nav>  <h1> <p> …
+			* You can set  margin-top margin-bottom			* Eg: `<div> <nav>  <h1> <p>...`
 		* display: inline:
 			* Takes only the space they need
 				* margin-top /bottom han NO effect
 				* Padding has different effect
-				* Eg: <a> <span><img>
+				* Eg: `<a> <span><img>`
 			* display: inline-block 
 					
 			* display: none
@@ -101,7 +101,7 @@ html skeleton
 		* Pseudo element:
 			* p::first-letter -> om eerste letter van p te stylen zoals in krant
 		* Combining multiple rules (different than colmbinators!)
-            ```
+            ```css
 			.main-nav__item a:hover,
 			.main-nav__item a:hover{
 			color:#aaaaaa;
@@ -121,7 +121,7 @@ html skeleton
 				* ! Geeft "blauwe" 'outline -> kunnen dit afzetten met onderstaande
 					* Outline = maakt geen deel uit van box-model!
 						(cfr afmetingen)
-					```
+					```css
 						.button:focus{
 						outline:none;
 						}
@@ -131,10 +131,10 @@ html skeleton
 				* Time when pressing button down.
 2. Hierarchy:
 
-	* <html>
-	    * <body>
-		    * <main>
-				* <element>
+	* `<html>`
+	    * `<body>`
+		    * `<main>`
+				* `<element>`
 
 If we set "height:100%" -> 100% refers to 'parent'. So if nothing is set at parrent it will be 100% of nothing. 
 
