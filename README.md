@@ -1,15 +1,19 @@
 # Getting-Started-CSS
 
-	1. Intro
-		○ BEM notation = Block-Element-Modifier
-			- = naming convention for CSS
-				□ Block
+1. Intro
+	○ BEM notation = Block-Element-Modifier
+		- = naming convention for CSS
+			□ Block
+                ```
 				/* Block component */
 				.btn {}
-				□ Element
+                ```
+			□ Element
+                ```
 				/* Element that depends upon the block */ 
 				.btn__price {}
-				□ Modifier
+                ```
+			□ Modifier
 				/* Modifier that changes the style of the block */
 				.btn--orange {} 
 				.btn--big {}
