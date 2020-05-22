@@ -50,7 +50,7 @@ html skeleton
         
         Example: if we set
 
-		* Body `{box-sizing:border-box}` -> all decending child elemnts would inherit this, BUT browsers somtimes overwrites it. So better is to address ALL element by `*`
+		* Body `{box-sizing:border-box}` -> all decending child elemnts would inherit this, BUT browsers somtimes overwrite it. So better is to address ALL elements by `*`
             ```css
 			* {
 			box-sizing: border-box;
@@ -62,73 +62,73 @@ html skeleton
 		* When 'content-box' -> height - width defines just content so rest must be added and risks to go off screen
 		* When 'border-box' -> width-height = border + padding + content = **WYSIWYG**
 
-**The 'box model":**
+    * **The 'box model":**
 
-<img src="./img/boxmodel.png" alt="box-model" width="300 px">
+    <img src="./img/boxmodel.png" alt="box-model" width="300px">
 			
-* Display elements: (cfr block-level vs inline elements)
-	* " display : ….. "
-		* display: block :
-			* Takes all the available space
-			* You can set  margin-top margin-bottom			* Eg: `<div> <nav>  <h1> <p>...`
-		* display: inline:
-			* Takes only the space they need
-				* margin-top /bottom han NO effect
-				* Padding has different effect
-				* Eg: `<a> <span><img>`
-			* display: inline-block 
-					
-			* display: none
-				* Removes element from document
-				* Other elements will move and take its space
-				* Remark:
-				    * Visibility:hidden
-						* Will remain and holds its place but not visible
-	* Margin colapsing
+    * Display elements: (cfr block-level vs inline elements)
+        * " display : ….. "
+            * display: block :
+                * Takes all the available space
+                * You can set  margin-top margin-bottom			* Eg: `<div> <nav>  <h1> <p>...`
+            * display: inline:
+                * Takes only the space they need
+                    * margin-top /bottom han NO effect
+                    * Padding has different effect
+                    * Eg: `<a> <span><img>`
+                * display: inline-block 
+                        
+                * display: none
+                    * Removes element from document
+                    * Other elements will move and take its space
+                    * Remark:
+                        * Visibility:hidden
+                            * Will remain and holds its place but not visible
+    * Margin colapsing
 
-<img src="./img/marginCollapse.png" alt="margin collapse" width="400px">
+    <img src="./img/marginCollapse.png" alt="margin collapse" width="400px">
 
-* Specificity:
-	* Pseudo Class - Pseudo Element
-		Zie MDN
+    * Specificity:
+        * Pseudo Class - Pseudo Element
+            Zie MDN
 
-<img src="./img/pseudoClasses.png" alt="margin collapse" width="400px">
+    <img src="./img/pseudoClasses.png" alt="margin collapse" width="400px">
 
-* Vb:
-	* Pseudo class:
-		* li:hover -> om van kleur te wijzigen bvb in navbar
-		*  :focus :active etc -> zie MDN
-		* Pseudo element:
-			* p::first-letter -> om eerste letter van p te stylen zoals in krant
-		* Combining multiple rules (different than colmbinators!)
-            ```css
-			.main-nav__item a:hover,
-			.main-nav__item a:hover{
-			color:#aaaaaa;
-			}
-            ```
-		*  Difference: :hover   :focus   :active
-			* Remember: a computer has many input devices!
-			
-			*  Hover:
-					® Time when mouse is over elemnt
-					® ! Do not use hover on mobile devices-> get stuck!
-					
-			* Focus:
-				* When element has 'focus' -evident :-)
-					* = at the moment button is clicked
-					* Eg: input text field can have focus while hovering with mouse over other elements
-				* ! Geeft "blauwe" 'outline -> kunnen dit afzetten met onderstaande
-					* Outline = maakt geen deel uit van box-model!
-						(cfr afmetingen)
-					```css
-						.button:focus{
-						outline:none;
-						}
-                    ```
-						
-			* Active:
-				* Time when pressing button down.
+    * Vb:
+        * Pseudo class:
+            * li:hover -> om van kleur te wijzigen bvb in navbar
+            *  :focus :active etc -> zie MDN
+            * Pseudo element:
+                * p::first-letter -> om eerste letter van p te stylen zoals in krant
+            * Combining multiple rules (different than colmbinators!)
+                ```css
+                .main-nav__item a:hover,
+                .main-nav__item a:hover{
+                color:#aaaaaa;
+                }
+                ```
+            *  Difference: :hover   :focus   :active
+                * Remember: a computer has many input devices!
+                
+                *  Hover:
+                        ® Time when mouse is over elemnt
+                        ® ! Do not use hover on mobile devices-> get stuck!
+                        
+                * Focus:
+                    * When element has 'focus' -evident :-)
+                        * = at the moment button is clicked
+                        * Eg: input text field can have focus while hovering with mouse over other elements
+                    * ! Geeft "blauwe" 'outline -> kunnen dit afzetten met onderstaande
+                        * Outline = maakt geen deel uit van box-model!
+                            (cfr afmetingen)
+                        ```css
+                            .button:focus{
+                            outline:none;
+                            }
+                        ```
+                            
+                * Active:
+                    * Time when pressing button down.
 2. Hierarchy:
 
 	* `<html>`
@@ -136,7 +136,7 @@ html skeleton
 		    * `<main>`
 				* `<element>`
 
-If we set "height:100%" -> 100% refers to 'parent'. So if nothing is set at parrent it will be 100% of nothing. 
+    If we set "height:100%" -> 100% refers to 'parent'. So if nothing is set at parrent it will be 100% of nothing. 
 
 	* When refering to the total page -> we need to go and chain upto <html>. If set height:100% at this level, it will refer to the full page and a child set at 50% wil take 50% height of screen.
 
@@ -152,7 +152,7 @@ If we set "height:100%" -> 100% refers to 'parent'. So if nothing is set at parr
 		}
         ````
 
-2. Positioning
+3. Positioning
 	
 	* 'position':
 		* Static = default -> according to document flow.
