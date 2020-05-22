@@ -1,36 +1,44 @@
 # Getting-Started-CSS
 
 1. Intro
-	○ BEM notation = Block-Element-Modifier
-		- = naming convention for CSS
-			□ Block
+
+	* BEM notation = Block-Element-Modifier
+
+		* = naming convention for CSS
+		    * Block
+
                 ```
 				/* Block component */
 				.btn {}
                 ```
-			□ Element
+			* Element
+
                 ```
 				/* Element that depends upon the block */ 
 				.btn__price {}
                 ```
-			□ Modifier
+
+			* Modifier
+            ```
 				/* Modifier that changes the style of the block */
 				.btn--orange {} 
 				.btn--big {}
+            ```
 				
-		○ CSS: where ?
-			- Inline
-			- between <script> tags in html
-			- In separate file .css
-		○ Start van CSS file: "Universal selector"
-			- Problem = normally elements 'inherit properties'. Example: if we set
+		* CSS: where ?
+			* Inline
+			* between <script> tags in html
+			*In separate file .css
+		* Start van CSS file: "Universal selector"
+			* Problem = normally elements 'inherit properties'. Example: if we set
 				□ Body {box-sizing:border-box} -> all decending child elemnts would inherit this, BUT browsers somtimes overwrites it. So better is to address ALL element by '*' !!!!!! 
-		
+            ```
 			* {
 			box-sizing: border-box;
 			}
+            ```
 		
-		Remark: default = " box-sizing : content-box " -> this feels not natural
+		**Remark:** default = " box-sizing : content-box " -> this feels not natural
 			- When 'content-box' -> height - width defines just content so rest must be added and risks to go off screen
 			- When 'border-box' -> width-height = border + padding + content
 							} WYSIWYG
