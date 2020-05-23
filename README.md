@@ -205,13 +205,13 @@ html skeleton
     
     **Summary:**
 
-    | Position | default | in document flow ? |
-    |----------|  :---:  |   :------:         |
-    | static   | yes     | yes                |
-    | fixed    | no      | no                 |
-    | absolute | no      | no               |
-    | relative | no      | yes                |
-    | sticky   | no      | yes/no             |
+    | Position | default | in document flow ? | can i use top/bottom/left/right ?|
+    |----------|  :---:  |   :------:         |  :----:  |
+    | static   | yes     | yes                | no   |
+    | fixed    | no      | no                 | yes  |
+    | absolute | no      | no                 | yes  |
+    | relative | no      | yes                | yes  |
+    | sticky   | no      | yes/no             | yes  |
 
 
 
