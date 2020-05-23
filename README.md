@@ -180,6 +180,40 @@ html skeleton
 		* 'relative'
 			* Element blijft IN documentflow
 			* Element verschuift tov zijn originele plaats
-		
-		**Remark:** In case you want to hideyour element once is start going out of the parent:
-Overflow:hidden (on the parent)
+		    *  **Remark:** In case you want to hide your element once is start going out of the parent:
+                * Overflow:hidden (on the parent)
+        * 'sticky':
+            * element moves normally in the viewport until it reaches a treshold, and than becomes fixed.
+            * posistion property changes dynamically between 'relative' and 'fixed. 
+            ```css
+            .character {
+                position: sticky;
+                top:0px;
+            }
+            ```
+            see example: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning)
+    * stacking context:
+        * stacking of elements is defined by the Z-index
+        * BUT:
+            * **important:** the stacking context is always inside the parent
+            * imagine:
+                * element B1 with parent A1
+                * element B2 with parent A2
+                * Z-index A2 > A2
+                * Z index B1 > B2
+                * Then B2, with a lower Z-index, will be on top of B1. Because the parent A2 wins it from A1! So the Z-index is always evaluated within the parent.
+    
+    **Summary:**
+
+    | Position | default | in document flow ? |
+    |----------|  :---:  |   :------:         |
+    | static   | yes     | yes                |
+    | fixed    | no      | no                 |
+    | absolute | no      | no               |
+    | relative | no      | yes                |
+    | sticky   | no      | yes/no             |
+
+
+
+    <img src="./img/positionSummary.png" alt="position summary" width="600px">
+
